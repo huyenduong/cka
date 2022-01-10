@@ -1,3 +1,11 @@
+# deployment rollback 
+
+kubectl rollout undo deployments nginx-deployment
+
+# view rollout history 
+
+kubectl rollout history deployment nginx-deployment
+
 #create a pod name nginx-pod using image nginx:alpine
 
 kubectl run --generator=run-pod/v1 nginx-pod --image=nginx:alpine
